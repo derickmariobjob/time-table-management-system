@@ -1,0 +1,64 @@
+-- Create Database
+CREATE DATABASE timetable;
+USE timetable;
+
+-- Create Table Structure
+CREATE TABLE ramaraj (
+    s_no INT,
+    day VARCHAR(15),
+    period1 VARCHAR(20),
+    period2 VARCHAR(20),
+    period3 VARCHAR(20),
+    period4 VARCHAR(20),
+    period5 VARCHAR(20)
+);
+
+CREATE TABLE mohan LIKE ramaraj;
+CREATE TABLE rajasekar LIKE ramaraj;
+CREATE TABLE manikandan LIKE ramaraj;
+CREATE TABLE vinoth LIKE ramaraj;
+
+-- Insert Values for MR. RAMARAJ
+INSERT INTO ramaraj VALUES
+(1,'MONDAY','XII-A','XI-A','FREE','XI-B','XII-B'),
+(2,'TUESDAY','XI-A','XI-B','FREE','XII-B','XII-A'),
+(3,'WEDNESDAY','XI-A','XI-A','FREE','XI-B','XI-A'),
+(4,'THURSDAY','XII-A','XI-A','XI-B','FREE','XII-B'),
+(5,'FRIDAY','XI-A','XI-A','XII-B','FREE','XI-B'),
+(6,'SATURDAY','XII-A','XI-A','XII-B','FREE','XI-B');
+
+-- Insert Values for MR. MOHAN
+INSERT INTO mohan VALUES
+(1,'MONDAY','XI-B','XII-A','FREE','XI-A','XI-B'),
+(2,'TUESDAY','XII-B','XI-B','FREE','XI-A','XII-A'),
+(3,'WEDNESDAY','XI-B','XI-A','FREE','XII-B','XI-A'),
+(4,'THURSDAY','XI-A','XI-B','XII-A','FREE','XI-B'),
+(5,'FRIDAY','XII-A','XI-A','XI-B','FREE','XII-B'),
+(6,'SATURDAY','XI-B','XI-A','XII-A','FREE','XI-B');
+
+-- Insert Values for MR. RAJASEKAR
+INSERT INTO rajasekar VALUES
+(1,'MONDAY','XII-B','XI-A','FREE','XI-B','XI-A'),
+(2,'TUESDAY','XI-A','XII-A','FREE','XI-B','XII-B'),
+(3,'WEDNESDAY','XI-B','XI-A','FREE','XI-A','XII-A'),
+(4,'THURSDAY','XII-A','XI-B','XI-A','FREE','XI-B'),
+(5,'FRIDAY','XI-A','XI-B','XII-B','FREE','XI-A'),
+(6,'SATURDAY','XI-B','XI-A','XII-A','FREE','XI-B');
+
+-- Insert Values for MR. MANIKANDAN
+INSERT INTO manikandan VALUES
+(1,'MONDAY','XI-A','XI-B','FREE','XII-A','XI-B'),
+(2,'TUESDAY','XI-B','XI-A','FREE','XII-B','XI-A'),
+(3,'WEDNESDAY','XI-A','XI-B','FREE','XI-A','XII-B'),
+(4,'THURSDAY','XII-A','XI-A','XI-B','FREE','XI-A'),
+(5,'FRIDAY','XI-B','XI-A','XII-A','FREE','XI-B'),
+(6,'SATURDAY','XI-A','XI-B','XII-B','FREE','XI-A');
+
+-- Insert Values for MR. VINOTH
+INSERT INTO vinoth VALUES
+(1,'MONDAY','XII-A','XI-B','FREE','XI-A','XI-B'),
+(2,'TUESDAY','XI-A','XII-B','FREE','XI-B','XI-A'),
+(3,'WEDNESDAY','XI-B','XI-A','FREE','XII-A','XI-B'),
+(4,'THURSDAY','XI-A','XI-B','XII-B','FREE','XI-A'),
+(5,'FRIDAY','XII-B','XI-A','XI-B','FREE','XII-A'),
+(6,'SATURDAY','XI-A','XI-B','XII-A','FREE','XI-B');
